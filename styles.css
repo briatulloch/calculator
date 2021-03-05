@@ -1,0 +1,60 @@
+/* import h1 font */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/*remove space above header */
+*{
+    margin:0;
+}
+
+html{ 
+    text-align:center; 
+    background-color: #E5E5F7;
+    opacity: 0.5;
+    background: radial-gradient(circle, transparent 20%, #E5E5F7 20%, #E5E5F7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #E5E5F7 20%, #E5E5F7 80%, transparent 80%, transparent) 50px 50px, linear-gradient(#444CF7 4px, transparent 4px) 0 -2px, linear-gradient(90deg, #444CF7 4px, #E5E5F7 4px) -2px 0;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;    
+}
+/* code for background design from https://www.magicpattern.design/tools/css-backgrounds*/
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 47px;   
+}
+
+header{
+    background-color: white;
+    margin-bottom: 50px;
+}
+#container{
+    margin: auto;
+    border: 3px solid black;
+    position: relative;
+    width:302px;
+    
+    background-color: rgb(4, 80, 97);
+    border-radius: 5px;
+}
+input[type="text"]{
+    position:relative;
+    display:block;
+    width:90%;
+    margin: 12px auto 0px auto;
+    font-size: 20px;
+    font-weight:bold;
+    
+    background-color: #cccccc;
+    
+}
+input[type="button"]{
+    position:relative;
+    background-color: #b3b3b3;
+    width:20%;
+    margin:2%;
+    font-size: 20px;
+    border-radius:10%;
+    border-color: black;
+    font-weight:bold;
+}
+input[type="button"]:hover{
+    background-color: #8c8c8c;
+    cursor: pointer;
+}
+
