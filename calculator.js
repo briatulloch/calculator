@@ -1,9 +1,11 @@
-
+//Set Global Variables 
 const input=document.getElementById("input");
 const container=document.getElementById("container");
 const calc =document.getElementById("button=");
 const clear=document.getElementById("buttonc");
 
+//make input form read only so input on screen cannot be changed (only responds to buttons)
+document.getElementById("input").setAttribute("readonly", true);
 
 container.addEventListener("click", function(e){
     buttonClick(e.target.id);
