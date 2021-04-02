@@ -17,7 +17,7 @@ html{
 
 h1{
     font-family: 'Dancing Script', cursive;
-    font-size: 47px;   
+    font-size: 52px;   
 }
 
 header{
@@ -28,7 +28,7 @@ header{
     margin: auto;
     border: 3px solid black;
     position: relative;
-    width:261px;
+    width:257px;
     height:300px;
     background-color: rgb(4, 80, 97);
     border-radius: 5px;
@@ -48,9 +48,9 @@ input[type="button"]{
     background-color: #b3b3b3;
     width:59px;
     height:28px;
-    margin: 9px 1px 9px 1px;
+    margin: 9px 0.5px 9px 0.5px;
     font-size: 20px;
-    border-radius:5px;
+    border-radius:2px;
     border-color: black;
     font-weight:bold;
 }
