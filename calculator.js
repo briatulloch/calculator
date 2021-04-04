@@ -8,7 +8,7 @@ const clear=document.getElementById("clearbtn");
 document.getElementById("input").setAttribute("readonly", true);
 
 container.addEventListener("click", function(e){
-    buttonClick(e.target.id);
+    getValue(e.target.id);
 });
 
 //use event parameter of target to identify what's inside the id which are the buttons
