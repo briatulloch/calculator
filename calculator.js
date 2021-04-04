@@ -1,46 +1,46 @@
 //Set Global Variables 
-const input=document.getElementById("input");
+const displayScreen=document.getElementById("input");
 const container=document.getElementById("container");
-const calc =document.getElementById("button=");
-const clear=document.getElementById("buttonc");
+const resultNum =document.getElementById("equalbtn");
+const clearBtn=document.getElementById("clearbtn");
 
 //make input form read only so input on screen cannot be changed (only responds to buttons)
 document.getElementById("input").setAttribute("readonly", true);
 
 container.addEventListener("click", function(e){
-    buttonClick(e.target.id);
+    getNumberValue(e.target.id);
 });
 
 //use event parameter of target to identify what's inside the id which are the buttons
 
-calc.addEventListener("click", operate);
+resultNum.addEventListener("click", operate);
 
-clear.addEventListener("click", erase);
+clearBtn.addEventListener("click", clear);
 
-function buttonClick(buttonId){
-    if ((buttonId !="buttonc") && (buttonId !="button=")){
+function getNumberValue(buttonId){
+    if ((buttonId !="clearbtn") && (buttonId !="equalbtn")){
         let button=document.getElementById(buttonId);
         let tmp=buttonId;
         tmp=tmp.replace("button", "");
-        entries(tmp);
+        concatenate(tmp);
     }
 };
 //use 'replace' so when buttons are clicked it removes preface(button) and the id is just a number in the string format
 
-function entries(tmp){
-    input.value += tmp; 
+function concatenate(tmp){
+    displayScreen.value += tmp; 
 }
 //concatenating values entered by pressing buttons within container
 
 function operate (){
-    if(input.value=="."){
+    if(displayScreen.value=="."){
         alert("Oops! Please enter a math equation");
         return;
     }else{
-    input.value=eval(input.value);
+    displayScreen.value=eval(displayScreen.value);
     }
 };
 
-function erase(){
-    input.value="";
+function clear(){
+    displayScreen.value="";
 }
