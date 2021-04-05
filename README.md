@@ -1,3 +1,5 @@
 Live working version available here: https://briatulloch.github.io/calculator/
 
-I will be re-attempting this project without the use of eval() in the future
+I have since re-attempted this project without using eval() in my calculator2.0 repo.
+
+The updated version: https://briatulloch.github.io/calculator2.0/.
